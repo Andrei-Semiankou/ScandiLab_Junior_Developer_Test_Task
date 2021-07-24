@@ -1,0 +1,1 @@
+# ScandiLab_Junior_Developer_Test_Task
