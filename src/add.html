@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Product Add</h1>
+            <ul class="heading_buttons">
+                <li><button type="button"  data-action="save">Save</button></li>
+                <li><button type="button" data-action="cancel" >Cancel</button></li>
+        </div>
+        <div class="bar"></div>
+    </div>
+    <div class="container"> 
+        <form id="product_form" >
+            <div class="form_data">
+                <div class="form_label">
+                    <label for="sku">SKU</label>
+                    <label for="name">Name</label>
+                    <label for="price">Price ($)</label>
+                </div>
+                <div class="form_input">
+                    <input type=text id="sku"  required value=""/>
+                    <input type=text id="name" required value=""/>
+                    <input type=number id="price" min="0" required value=""/>
+                </div>
+            </div>
+            <div class="form_select">
+                <label for=productType>Type Switcher</label>
+                <select>
+                    <option disabled selected hidden></option>
+                    <option disabled value="Type Switcher">Type Switcher</option>
+                    <option value="DVD"  >DVD-disc</option>
+                    <option value="Book" >Book</option>
+                    <option value="Furniture" >Furniture</option>
+                </select>
+            </div>
+            <div class="size-js">
+                <div class="form_size">
+                    <div class="form_label">
+                        <label for="size">Size(MB)</label>
+                    </div>
+                    <div class= "form_input">
+                        <input type=number min="0" required id="size" value=""/>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Please, provide size in MB.</p>
+                </div>
+            </div>
+            <div class="weight-js">
+                <div class="form_weight">
+                    <div class="form_label">
+                        <label for="weight">Weight(KG)</label>
+                    </div>
+                    <div class="form_input">
+                        <input type=number required id="weight" min="0" value=""/>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Please, provide weight in Kg.</p>
+                </div>
+            </div>
+            <div class ="forniture-js" >
+                <div class="form_forniture">
+                    <div class="forniture-demension">
+                        <label for="height">Height(CM)</label>
+                        <label for="width">Width(CM)</label>
+                        <label for="length">Length(CM)</label>
+                    </div>
+                    <div class="forniture-values">
+                        <input type=number min="0" required id="height"  value=""/>
+                        <input type=number min="0"  required id="width" value=""/>
+                        <input type=number min="0" required id="length"value=""/>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Please, provide demensions in HxWxL format.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
